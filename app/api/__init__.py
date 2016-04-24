@@ -1,5 +1,5 @@
 from flask import Blueprint
 
-scripts = Blueprint('scripts', __name__);
+api = Blueprint('api', __name__);
 
 import routes
