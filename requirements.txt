@@ -1,0 +1,7 @@
+# Requirements for running fusion experiments
+flask
+flask-socketio
+eventlet
+pymongo
+mongokit
+watchdog

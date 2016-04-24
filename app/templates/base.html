@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>{% block title %}im3{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{# default css #}
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+	{% block head %}{% endblock %}
+	{% block css %}{% endblock %}
+</head>
+
+<body>
+	{% block body %}{% endblock %}
+	{% block js %}{% endblock %}
+</body>
