@@ -1,0 +1,10 @@
+# Requirements for running fusion experiments
+flask
+flask-socketio
+eventlet
+pymongo==2.8 # latest mongokit depends on 2.8, 3.0+ will break
+mongokit
+watchdog
+jsmin
+Flask-WTF
+Flask-Login

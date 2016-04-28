@@ -1,0 +1,4 @@
+*.pyc
+fe/
+.DS_Store
+db/
