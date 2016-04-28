@@ -1,7 +1,5 @@
 *.pyc
-<<<<<<< HEAD
 fe/
 .DS_Store
 db/
-=======
->>>>>>> b0d31150f7bf3d28249eb279a962be257faf90a5
+.sass-cache/
