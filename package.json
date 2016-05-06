@@ -1,0 +1,39 @@
+{
+  "name": "fusionexperiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-concat": "^2.6.0",
+    "gulp-dedupe": "0.0.2",
+    "gulp-exit": "0.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-serve": "^1.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.2",
+    "mkdirs": "0.0.2",
+    "request": "^2.72.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quadnix/fusionexperiments.git"
+  },
+  "author": "patrick kage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quadnix/fusionexperiments/issues"
+  },
+  "homepage": "https://github.com/quadnix/fusionexperiments#readme"
+}

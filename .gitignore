@@ -3,3 +3,4 @@ fe/
 .DS_Store
 db/
 .sass-cache/
+node_modules/

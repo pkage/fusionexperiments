@@ -1,0 +1,43 @@
+.app {
+	@extend .fullheight;
+	@include outer-container(100%);
+	background-color: $main-bg;
+	color: $main-fg;
+	> .toolbar, aside {
+		@extend .fullheight;
+		@include span-columns(3);
+		background-color: $accent-bg;
+	}
+	
+	> .content {
+		@extend .fullheight;
+		@include span-columns(9);
+	}
+}
+
+.front {
+	min-height: 100vh;
+	background-color: $main-bg;
+	
+	> .jumbo {
+		height: 70vh;
+		@include display(flex);
+		@include align-items(center);
+		@include flex-direction(row);
+		@include justify-content(center);
+		> .content {
+			line-height: .9em;
+			@include display(flex);
+			@include flex-direction(row);
+			@include align-items(center);
+			@include animation(fadeIn 1.0s ease, slideUp 1.0s ease);
+			font-size: 3em;
+			color: $accent-1;
+			> i {
+				color: $accent-2;
+				display: block;
+				margin-right: 1rem;
+			}
+		}
+	}
+}

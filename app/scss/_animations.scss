@@ -1,0 +1,32 @@
+@include keyframes(fadeIn) {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(slideUp) {
+	0% {
+		@include transform(translateY(100px));
+	}
+	100% {
+		@include transform(none);
+	}
+	
+}
+
+@include keyframes(jumboOut) {
+	0% {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+	}
+	100% {
+		position: static;
+		height: 70vh;
+	}
+
+}

@@ -1,2 +1,9 @@
-@import "_variables.scss";
-@import "_common.scss";
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+// my shit
+@import "variables";
+@import "common";
+@import "animations";
+@import "layout";
+@import "nav";

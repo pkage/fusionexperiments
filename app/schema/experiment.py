@@ -7,8 +7,9 @@ class Experiment(Document):
 		"author": unicode,
 		"description": unicode,
 		"libraries": list,
-		"js": unicode,
-		"html": unicode
+		"js": str,
+		"html": str,
+		"styles": str
 	}
 	validators = {
 		"name": max_length(32),
