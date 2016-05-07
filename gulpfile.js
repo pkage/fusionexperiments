@@ -19,8 +19,12 @@ var exit = require('gulp-exit');
 
 var runCommand = function(command) {
 	exec(command, function(err, stdout, stderr) {
-		console.log(stdout);
-		console.log(stderr);
+		if (stdout !== "") {
+			console.log(stdout);
+		}
+		if (stderr !== "") {
+			console.log(stderr);
+		}
 		if (err !== null) {
 			console.log('exec err: ' + err);
 		}
@@ -62,7 +66,8 @@ gulp.task('notify', function() {
 // watcher task
 gulp.task('watch', function() {
 	gulp.watch('app/scss/*', ['scss', 'notify']);
-	gulp.watch('ap/static/*', ['notify']);
+	gulp.watch('app/static/*', ['notify']);
+	gulp.watch('app/templates/*', ['notify']);
 });
 
 gulp.task('mongo-start', function() {
@@ -76,7 +81,10 @@ gulp.task('mongo-stop', function() {
 	runCommand(command);
 });
 
+gulp.task('mongo-restart', ['mongo-stop', 'mongo-start']);
+
 gulp.task('default', [
 	'scss',
 	'watch',
+	'mongo-start'
 ]);

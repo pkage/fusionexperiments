@@ -27,6 +27,10 @@ def create_app(debug=False):
     from .edit import edit as edit_blueprint
     app.register_blueprint(edit_blueprint)
 
+    from .data import data as data_blueprint
+    app.register_blueprint(data_blueprint, url_prefix="/data");
+
+
     socketio.init_app(app)
 
     

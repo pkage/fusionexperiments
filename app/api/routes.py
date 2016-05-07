@@ -9,7 +9,7 @@ def scripts_base():
 @api.route('/debug/reload')
 def bcast_reload():
 	socketio.emit('debug', {'directive': 'reload'});
-	return "reloaded!";
+	return '<a href="/api/debug/reload">reloaded!</a>';
 
 @socketio.on('execute_script')
 def execute_script(data):
